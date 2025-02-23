@@ -11,10 +11,16 @@ services:
     #   DBPASSWORD: postgres
 
     environment:
-      DBURL: ep-rapid-smoke-a2zcyrhr.eu-central-1.pg.koyeb.app/
-      DBNAME: koyebdb
-      DBUSERNAME: koyeb-adm
-      DBPASSWORD: npg_imSv4UqgDG1w
+      SPRING_DATASOURCE_URL: jdbc:postgresql://ep-silent-sun-a2x4x5jl.eu-central-1.pg.koyeb.app:5432/koyebdb
+      SPRING_DATASOURCE_USERNAME: koyeb-adm
+      SPRING_DATASOURCE_PASSWORD: npg_j2HyfxdmgwB9
+
+
+
+      # DBURL: ep-rapid-smoke-a2zcyrhr.eu-central-1.pg.koyeb.app/
+      # DBNAME: koyebdb
+      # DBUSERNAME: koyeb-adm
+      # DBPASSWORD: npg_imSv4UqgDG1w
 
 #   depends_on:
 #      - postgres
@@ -29,4 +35,4 @@ services:
   #     POSTGRES_PASSWORD: postgres
   #     POSTGRES_DB: library-app
 
-#     koyeb-adm:npg_imSv4UqgDG1w@ep-rapid-smoke-a2zcyrhr.eu-central-1.pg.koyeb.app/koyebdb
+#     JDBC_URI=jdbc:postgresql://ep-rapid-smoke-a2zcyrhr.eu-central-1.pg.koyeb.app/koyebdb?user=koyeb-adm&password=npg_imSv4UqgDG1w
